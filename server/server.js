@@ -13,7 +13,7 @@ connectDB()
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(express.static("public"))
-
+//from basic user for problem
 app.get('/upload/:filename', (req, res) => {
     const imagePath = path.join(__dirname, '/public/upload/', req.params.filename);
     res.sendFile(imagePath, { headers: { 'Content-Type': 'image/jpeg' } });
