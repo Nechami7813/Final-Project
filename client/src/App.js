@@ -40,6 +40,7 @@ function App() {
   return(
     <>
     <Routes>
+    //user comp
     <Route path='/' element={<HomePage />} />
     <Route path='/login' element={<LoginDemo />} />
     <Route path='/register' element={<Register />} />
